@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SOC Triage Agent</title>
+  <link rel="icon" href="/brand/logo">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="toolbar">
+    <a id="home" class="brand" href="#" title="Home"><span class="brand-tile" data-logo></span>SOC Triage Agent <span class="sub">Level 1</span></a>
+    <div id="toolbar-slot" class="toolbar-slot"></div>
+    <div id="health" class="health"></div>
+  </header>
+
+  <main id="main" class="main"></main>
+
+  <!-- Alert picker: centred on the home screen, moves into the toolbar once an alert is open. -->
+  <div id="picker" class="picker">
+    <div class="picker-box">
+      <span class="picker-search" data-icon="search"></span>
+      <input id="search" type="text" placeholder="Search alerts by ID, user, host or description" autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="alerts" aria-label="Search alerts">
+      <button id="picker-toggle" class="picker-toggle" type="button" aria-label="Show all alerts" data-icon="chevronDown"></button>
+    </div>
+    <div id="picker-menu" class="picker-menu" hidden>
+      <div class="picker-head">
+        <div id="origin" class="segmented mini" role="group" aria-label="Alert source">
+          <button type="button" data-origin="" class="active">All</button>
+          <button type="button" data-origin="csv">CSV</button>
+          <button type="button" data-origin="simulator">Simulated</button>
+        </div>
+        <span id="alert-count" class="label"></span>
+      </div>
+      <ul id="alerts" class="picker-list" role="listbox"></ul>
+      <div class="picker-foot">
+        <button id="simulate" class="plain" type="button" data-icon="plus">Simulate 10 alerts</button>
+        <button id="clear-sim" class="plain" type="button" data-icon="trash">Clear simulated</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

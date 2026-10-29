@@ -30,6 +30,9 @@
 
 - We will be using BM25 i.e an Algorithm and semantic matching with 50% weightage on both factors. Semantic is the understanding and BM25 helps with Keyword searches. 
 
+- Brainstormed Architecture:
+![alt text](image-1.png)
+
 ## Human in the Loop
 - If AI Agent comes across a new problem or thinks it needs to update the playbooks, then it can generate it, show the difference to the human and ask the human to approve or deny updating/creating a new playbook. 
 - The human will see a "Approve" or "Deny" and also have the ability to edit themselves to the AI generated recomemnded changes.
@@ -62,4 +65,5 @@ procedures consulted, reasoning applied, and
 recommended actions Proposed
     - Datadog APM traces is our inspiration design to show the explainable audiatble investigation trail but tailored for our usecase 
     ![alt text](image.png)
+
 

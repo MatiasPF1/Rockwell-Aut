@@ -1,0 +1,55 @@
+# Who owns each playbook step. The playbooks in Playbooks/ are read-only, so the
+# human/agent split lives here instead.
+#
+# - match: text copied from the playbook (whitespace-insensitive). Validated at
+#   startup; if a playbook changes upstream and the text disappears, the app says so.
+# - owner: agent | human. Steps not listed here belong to the agent.
+# - gate: none | blocking (agent pauses for a person) | act_then_confirm
+#   (agent may act at once, a person confirms afterwards).
+# - constraint: a hard rule the agent must not break.
+
+insider_threat:
+  - match: "Confirm data volume, destination, and business justification with the user's manager"
+    owner: human
+    gate: blocking
+    note: Requires talking to the user's manager.
+  - match: "Do not tip off the user prematurely if deliberate intent is suspected"
+    owner: agent
+    constraint: no_user_contact
+    note: Agent must never contact the user.
+  - match: "coordinate with Legal on this"
+    owner: human
+    gate: blocking
+    note: Legal decision.
+
+data_exfiltration:
+  - match: "Do not tip off the user if insider intent is suspected"
+    owner: agent
+    constraint: no_user_contact
+  - match: "Escalate to Legal/Privacy if regulated data (PII, PCI, PHI) was confirmed involved"
+    owner: human
+    gate: blocking
+    note: Legal/compliance decision.
+
+ddos:
+  - match: "Confirm this is not a legitimate load event (marketing launch, viral traffic)"
+    owner: human
+    gate: blocking
+    note: Needs business context the agent does not have.
+
+privilege_escalation:
+  - match: "Confirm whether the elevated access was granted through an approved change ticket"
+    owner: human
+    gate: blocking
+    note: Needs the change-management system.
+
+ransomware_indicator:
+  - match: "Isolate the affected host(s) from the network immediately - do not power off"
+    owner: agent
+    gate: act_then_confirm
+    note: Playbook says isolate immediately; waiting costs containment time.
+
+malware:
+  - match: "Isolate the affected endpoint from the network via EDR immediately - do not wait for full analysis to complete"
+    owner: agent
+    gate: act_then_confirm
