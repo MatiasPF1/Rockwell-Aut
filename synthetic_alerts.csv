@@ -1,0 +1,281 @@
+alert_id,timestamp,severity,source_system,affected_user,affected_device,description
+ALT-1001,2026-05-20T02:07:00Z,High,IdP / SSO Provider,jdoe27,WKS-3702,Antivirus quarantined a file matching Trojan.Gen.7 on WKS-9711 after a user opened an email attachment.
+ALT-1002,2026-06-06T19:07:00Z,Critical,SIEM Correlation Rule,jdoe4,WKS-4575,Traffic spike of 41x baseline detected on ERP-App from 5730 distinct source IPs.
+ALT-1003,2026-08-27T18:11:00Z,Low,AD Domain Controller,jdoe19,WKS-1067,"jdoe59 accessed HR-Portal records far outside their normal job function, then exported 44GB."
+ALT-1004,2026-03-18T03:23:00Z,Low,Network IDS,jdoe2,WKS-2152,Password-spray pattern detected: 53 failed logins across multiple accounts including jdoe21 from 185.27.124.163.
+ALT-1005,2026-01-25T16:19:00Z,Medium,EDR-Endpoint01,jdoe45,WKS-5278,External attack-surface scan found WKS-8996 exposing a service vulnerable to CVE-2026-3361 (CVSS 5.9).
+ALT-1006,2026-06-03T07:06:00Z,Critical,VPN Gateway,jdoe31,WKS-4222,Shadow copy deletion command executed on WKS-7564 immediately before mass file changes began.
+ALT-1007,2026-08-26T20:09:00Z,Low,Network IDS,jdoe53,WKS-8771,Traffic spike of 30x baseline detected on FileShare-Prod from 3944 distinct source IPs.
+ALT-1008,2026-08-22T18:52:00Z,Low,IdP / SSO Provider,jdoe27,WKS-9219,Anomalous request pattern consistent with directory traversal detected on customer-portal.rockwell.com from 185.8.65.55.
+ALT-1009,2026-02-17T14:35:00Z,Low,O365 Email Gateway,jdoe49,WKS-2038,AD lockout triggered for jdoe50 after 82 rapid failed authentication attempts from 185.186.31.143.
+ALT-1010,2026-06-05T08:56:00Z,Low,Firewall-Perimeter,jdoe30,WKS-4597,Unexpected sudo/root access granted to jdoe29 on WKS-4319 without an approved change ticket.
+ALT-1011,2026-02-26T07:56:00Z,Critical,EDR-Endpoint01,jdoe6,WKS-5351,"WKS-6556 observed making periodic outbound connections to file-share-823.net every 15 minutes, consistent with a C2 beacon pattern."
+ALT-1012,2026-02-15T00:21:00Z,Low,IdP / SSO Provider,jdoe27,WKS-5388,User jdoe53 downloaded 5GB from ERP-App to removable media outside business hours.
+ALT-1013,2026-04-17T15:15:00Z,Medium,SIEM Correlation Rule,jdoe7,WKS-8080,MFA-approved login for jdoe8 originated from a new device/location (Manila) never seen for this account.
+ALT-1014,2026-05-02T14:11:00Z,Low,Firewall-Perimeter,jdoe18,WKS-8304,Automated scanner fingerprinted internal-crm-app then attempted 9 injection payloads from 185.215.34.4 within 7 minutes.
+ALT-1015,2026-07-01T09:19:00Z,Medium,VPN Gateway,jdoe6,WKS-9670,O365 flagged an inbound message to jdoe21 with a spoofed sender header and a lookalike domain secure-login-416.net.
+ALT-1016,2026-01-21T00:40:00Z,High,IdP / SSO Provider,jdoe44,WKS-5006,Password-spray pattern detected: 70 failed logins across multiple accounts including jdoe10 from 185.193.130.146.
+ALT-1017,2026-04-03T19:09:00Z,High,Cloud WAF,jdoe17,WKS-5987,Unexpected sudo/root access granted to jdoe48 on WKS-2219 without an approved change ticket.
+ALT-1018,2026-08-09T12:13:00Z,High,VPN Gateway,jdoe5,WKS-2479,MFA-approved login for jdoe32 originated from a new device/location (Bucharest) never seen for this account.
+ALT-1019,2026-06-27T12:07:00Z,Low,VPN Gateway,jdoe46,WKS-1192,VPN gateway logged 53 failed connection attempts for jdoe53 from a single external IP 185.7.41.1.
+ALT-1020,2026-04-24T02:03:00Z,High,DLP Gateway,jdoe29,WKS-3270,"Repeated low-and-slow outbound connections from WKS-5597 to 185.214.170.74 on a non-standard port, beacon-interval jitter under 5%, and shadow copy deletion commands were also observed on the same host."
+ALT-1021,2026-08-18T07:28:00Z,High,Cloud WAF,jdoe49,WKS-8372,Anomalous request pattern consistent with directory traversal detected on partner-api from 185.67.104.168.
+ALT-1022,2026-03-22T16:33:00Z,Critical,VPN Gateway,jdoe6,WKS-5440,DLP flagged 5 files matching sensitive-data patterns uploaded to secure-login-426.net by jdoe12.
+ALT-1023,2026-08-03T17:49:00Z,High,O365 Email Gateway,jdoe1,WKS-3058,"Asset inventory shows WKS-8754 still running a version affected by CVE-2026-9648 (CVSS 9.2), 90+ days overdue for patching."
+ALT-1024,2026-07-23T20:19:00Z,Low,O365 Email Gateway,jdoe2,WKS-4180,"External attack-surface scan found WKS-9592 exposing a service vulnerable to CVE-2026-1018 (CVSS 5.5), and the same source IP also triggered a WAF injection-payload block."
+ALT-1025,2026-05-04T19:31:00Z,Low,Network IDS,jdoe12,WKS-4658,"User jdoe28 added to Domain Admins group by admin6, outside standard change-management process, and the affected host was already flagged unpatched for a known CVE."
+ALT-1026,2026-07-27T11:21:00Z,Medium,SIEM Correlation Rule,jdoe11,WKS-2785,"User jdoe14 added to Domain Admins group by admin1, outside standard change-management process, and the affected host was already flagged unpatched for a known CVE."
+ALT-1027,2026-07-02T12:02:00Z,High,SIEM Correlation Rule,jdoe5,WKS-2015,"Email from user45@partner-co.com to jdoe27 contains a link to file-share-489.net, flagged by URL reputation engine."
+ALT-1028,2026-03-01T23:19:00Z,Critical,Firewall-Perimeter,jdoe39,WKS-4868,"jdoe24 accessed FileShare-Prod records far outside their normal job function, then exported 15GB."
+ALT-1029,2026-08-06T07:08:00Z,Medium,DLP Gateway,jdoe30,WKS-4849,"CDN reported 9x normal request volume against FileShare-Prod, sourced from 2319 IPs across multiple ASNs."
+ALT-1030,2026-08-02T03:00:00Z,High,SIEM Correlation Rule,jdoe57,WKS-4786,"Repeated low-and-slow outbound connections from WKS-8199 to 185.63.61.40 on a non-standard port, beacon-interval jitter under 5%, and EDR also detected a known malware signature executing shortly after."
+ALT-1031,2026-07-22T11:11:00Z,Critical,Network IDS,jdoe20,WKS-2276,"User jdoe4 added to Domain Admins group by admin4, outside standard change-management process, and the affected host was already flagged unpatched for a known CVE."
+ALT-1032,2026-07-07T00:27:00Z,Low,Firewall-Perimeter,jdoe28,WKS-2860,"Asset inventory shows WKS-3681 still running a version affected by CVE-2026-6039 (CVSS 7.3), 90+ days overdue for patching, and the same source IP also triggered a WAF injection-payload block."
+ALT-1033,2026-08-11T01:38:00Z,Critical,DLP Gateway,jdoe6,WKS-3625,"EDR flagged process injection into svch0st.exe on WKS-2458, hash matches threat-intel signature Trojan.Gen.6."
+ALT-1034,2026-05-21T13:19:00Z,Medium,Network IDS,jdoe16,WKS-7975,Repeated 23 XSS probe requests detected against customer-portal.rockwell.com login page from 185.99.92.32.
+ALT-1035,2026-01-02T20:08:00Z,Medium,EDR-Endpoint01,jdoe60,WKS-6140,Anomalous outbound traffic from WKS-4854 to unregistered external IP 185.200.210.118 totaling 26GB over 6h.
+ALT-1036,2026-08-07T18:16:00Z,Low,Network IDS,jdoe33,WKS-4889,"WKS-5716 observed making periodic outbound connections to secure-login-298.net every 15 minutes, consistent with a C2 beacon pattern, and EDR also detected a known malware signature executing shortly after."
+ALT-1037,2026-05-13T11:36:00Z,High,Firewall-Perimeter,jdoe24,WKS-6420,"CDN reported 38x normal request volume against Finance-Share, sourced from 4901 IPs across multiple ASNs."
+ALT-1038,2026-06-10T03:33:00Z,Low,Cloud WAF,jdoe35,WKS-4674,"Antivirus quarantined a file matching Trojan.Gen.1 on WKS-1029 after a user opened an email attachment, and shadow copy deletion commands were also observed on the same host."
+ALT-1039,2026-08-08T05:57:00Z,Critical,O365 Email Gateway,jdoe3,WKS-2008,Anomalous outbound traffic from WKS-3446 to unregistered external IP 185.17.164.38 totaling 17GB over 9h.
+ALT-1040,2026-01-13T13:47:00Z,Critical,SIEM Correlation Rule,jdoe6,WKS-8413,Mass file rename/encryption activity detected on WKS-3330: 28 files renamed with a new extension within 6 minutes.
+ALT-1041,2026-03-24T10:12:00Z,Low,DLP Gateway,jdoe22,WKS-4918,AD lockout triggered for jdoe42 after 89 rapid failed authentication attempts from 185.112.176.202.
+ALT-1042,2026-01-23T02:47:00Z,Low,O365 Email Gateway,jdoe5,WKS-6954,jdoe45 exported 2GB from FileShare-Prod to a personal email account shortly after a support ticket about data access.
+ALT-1043,2026-05-02T22:48:00Z,Low,Cloud WAF,jdoe59,WKS-6256,External attack-surface scan found WKS-1564 exposing a service vulnerable to CVE-2026-2636 (CVSS 6.1).
+ALT-1044,2026-02-16T22:50:00Z,Low,Firewall-Perimeter,jdoe32,WKS-6688,jdoe51's account signed in from Manila while an active session from Bucharest was still open.
+ALT-1045,2026-03-13T20:14:00Z,Medium,SIEM Correlation Rule,jdoe9,WKS-9708,"EDR flagged powershell.exe rapidly modifying files across FileShare-Prod shares, consistent with ransomware behavior, and the host was also seen beaconing periodically to an external domain."
+ALT-1046,2026-04-24T10:38:00Z,Low,IdP / SSO Provider,jdoe23,WKS-3636,"Login for jdoe34 succeeded from Manila at one timestamp, then from Bucharest 5h later - physically implausible travel time."
+ALT-1047,2026-05-15T00:09:00Z,Critical,AD Domain Controller,jdoe39,WKS-7630,"Scanner flagged CVE-2026-2750 (CVSS 6.7) unpatched on WKS-5949, internet-facing, and the account was also granted elevated access with no change ticket on file."
+ALT-1048,2026-07-17T21:42:00Z,Medium,Firewall-Perimeter,jdoe58,WKS-6374,"User jdoe38 reported a suspicious email impersonating IT support, requesting credentials via file-share-783.net."
+ALT-1049,2026-02-24T19:22:00Z,Medium,O365 Email Gateway,jdoe17,WKS-5495,"Attachment in an email to jdoe35 from user33@partner-co.com triggered a phishing-macro detection rule, and was followed by an unusually large outbound transfer to external cloud storage."
+ALT-1050,2026-04-27T04:22:00Z,High,DLP Gateway,jdoe30,WKS-5822,jdoe27 exported 26GB from HR-Portal to a personal email account shortly after a support ticket about data access.
+ALT-1051,2026-06-26T04:33:00Z,Low,Cloud WAF,jdoe41,WKS-1245,"EDR flagged svch0st.exe rapidly modifying files across Finance-Share shares, consistent with ransomware behavior."
+ALT-1052,2026-02-24T14:42:00Z,Medium,EDR-Endpoint01,jdoe36,WKS-2940,"WAF blocked a SQL injection attempt against partner-api from IP 185.201.40.54, payload matched OWASP CRS rule 942353."
+ALT-1053,2026-02-06T20:23:00Z,Medium,O365 Email Gateway,jdoe2,WKS-1751,jdoe31 printed an unusually large volume of records from HR-Portal after hours.
+ALT-1054,2026-08-13T10:32:00Z,Low,AD Domain Controller,jdoe56,WKS-9297,Anomalous request pattern consistent with directory traversal detected on customer-portal.rockwell.com from 185.94.88.122.
+ALT-1055,2026-01-26T16:58:00Z,High,IdP / SSO Provider,jdoe40,WKS-7161,Traffic spike of 24x baseline detected on HR-Portal from 1038 distinct source IPs.
+ALT-1056,2026-01-16T18:33:00Z,Medium,O365 Email Gateway,jdoe53,WKS-2947,MFA-approved login for jdoe43 originated from a new device/location (Sao Paulo) never seen for this account.
+ALT-1057,2026-04-15T23:47:00Z,High,Firewall-Perimeter,jdoe60,WKS-1821,jdoe44 exported 1GB from FileShare-Prod to a personal email account shortly after a support ticket about data access.
+ALT-1058,2026-08-22T05:09:00Z,High,EDR-Endpoint01,jdoe24,WKS-3687,Finance-Share response times degraded under a sudden 15x traffic increase from 4134 distinct sources.
+ALT-1059,2026-06-09T08:27:00Z,Medium,Firewall-Perimeter,jdoe38,WKS-1692,Automated scanner fingerprinted support-ticketing then attempted 79 injection payloads from 185.214.80.150 within 40 minutes.
+ALT-1060,2026-02-08T12:37:00Z,High,IdP / SSO Provider,jdoe58,WKS-5252,"jdoe44 accessed ERP-App records far outside their normal job function, then exported 14GB."
+ALT-1061,2026-06-09T16:38:00Z,High,O365 Email Gateway,jdoe7,WKS-1550,"69 endpoints on the same subnet as WKS-6880 began exhibiting identical file-encryption patterns within 31 minutes, and the host was also seen beaconing periodically to an external domain."
+ALT-1062,2026-02-23T02:16:00Z,High,Cloud WAF,jdoe37,WKS-4820,External attack-surface scan found WKS-3144 exposing a service vulnerable to CVE-2026-3961 (CVSS 7.1).
+ALT-1063,2026-01-07T21:47:00Z,Low,AD Domain Controller,jdoe38,WKS-8229,"WAF blocked a SQL injection attempt against customer-portal.rockwell.com from IP 185.16.232.142, payload matched OWASP CRS rule 942151."
+ALT-1064,2026-08-04T12:53:00Z,Low,O365 Email Gateway,jdoe41,WKS-2231,"Automated scanner fingerprinted internal-crm-app then attempted 21 injection payloads from 185.235.174.229 within 6 minutes, and the affected host was already flagged unpatched for a known CVE."
+ALT-1065,2026-05-16T03:20:00Z,Critical,SIEM Correlation Rule,jdoe58,WKS-8904,Unexpected sudo/root access granted to jdoe31 on WKS-1929 without an approved change ticket.
+ALT-1066,2026-06-17T04:28:00Z,Low,O365 Email Gateway,jdoe51,WKS-9627,Antivirus quarantined a file matching Trojan.Gen.4 on WKS-5223 after a user opened an email attachment.
+ALT-1067,2026-04-19T09:12:00Z,High,O365 Email Gateway,jdoe5,WKS-9512,"jdoe59 accessed FileShare-Prod records far outside their normal job function, then exported 6GB."
+ALT-1068,2026-06-23T07:52:00Z,Low,Cloud WAF,jdoe50,WKS-7248,"Outbound transfer of 45GB to external cloud storage secure-login-115.net detected from WKS-3183, unusual volume for jdoe54's role."
+ALT-1069,2026-08-04T11:55:00Z,Low,EDR-Endpoint01,jdoe46,WKS-3932,"Successive logins for jdoe29 from IP addresses geolocated to Frankfurt and Chennai within 42 minutes, and preceded by a burst of failed login attempts from the same external IP."
+ALT-1070,2026-01-25T11:21:00Z,Critical,DLP Gateway,jdoe16,WKS-6489,O365 flagged an inbound message to jdoe38 with a spoofed sender header and a lookalike domain secure-login-224.net.
+ALT-1071,2026-07-25T14:40:00Z,Medium,O365 Email Gateway,jdoe52,WKS-1659,WKS-5084 resolved cloud-backup-629.net moments before establishing a long-lived outbound connection to 185.162.3.94.
+ALT-1072,2026-03-10T13:36:00Z,Low,AD Domain Controller,jdoe18,WKS-4987,O365 flagged an inbound message to jdoe52 with a spoofed sender header and a lookalike domain secure-login-356.net.
+ALT-1073,2026-03-28T07:20:00Z,Critical,IdP / SSO Provider,jdoe21,WKS-9051,"WKS-8551 observed making periodic outbound connections to account-verify-306.net every 60 minutes, consistent with a C2 beacon pattern."
+ALT-1074,2026-08-09T20:45:00Z,Low,Firewall-Perimeter,jdoe27,WKS-2693,"jdoe11 accessed ERP-App records far outside their normal job function, then exported 43GB, and the session also originated from a location never seen for this account."
+ALT-1075,2026-03-18T09:51:00Z,Medium,Firewall-Perimeter,jdoe28,WKS-7176,Attachment in an email to jdoe37 from user51@partner-co.com triggered a phishing-macro detection rule.
+ALT-1076,2026-01-20T21:22:00Z,Medium,SIEM Correlation Rule,jdoe1,WKS-2118,MFA-approved login for jdoe21 originated from a new device/location (Auckland) never seen for this account.
+ALT-1077,2026-05-23T10:52:00Z,High,IdP / SSO Provider,jdoe57,WKS-7895,"EDR flagged rundll32.exe rapidly modifying files across CRM-DB shares, consistent with ransomware behavior."
+ALT-1078,2026-05-28T20:57:00Z,Low,IdP / SSO Provider,jdoe33,WKS-3354,"Anomalous request pattern consistent with directory traversal detected on customer-portal.rockwell.com from 185.3.202.1, and the affected host was already flagged unpatched for a known CVE."
+ALT-1079,2026-02-28T18:04:00Z,Low,Cloud WAF,jdoe13,WKS-8370,MFA-approved login for jdoe10 originated from a new device/location (Bucharest) never seen for this account.
+ALT-1080,2026-04-14T09:25:00Z,Medium,SIEM Correlation Rule,jdoe2,WKS-4987,jdoe57's account signed in from Frankfurt while an active session from Singapore was still open.
+ALT-1081,2026-07-02T08:42:00Z,Medium,O365 Email Gateway,jdoe22,WKS-3554,Antivirus quarantined a file matching Trojan.Gen.6 on WKS-2882 after a user opened an email attachment.
+ALT-1082,2026-06-18T07:25:00Z,Critical,Network IDS,jdoe33,WKS-4482,External attack-surface scan found WKS-7027 exposing a service vulnerable to CVE-2026-4408 (CVSS 6.8).
+ALT-1083,2026-04-03T22:19:00Z,High,EDR-Endpoint01,jdoe15,WKS-5727,52 failed login attempts for account jdoe48 from external IP 185.182.23.178 within 5 minutes.
+ALT-1084,2026-04-23T21:02:00Z,Critical,DLP Gateway,jdoe3,WKS-3654,Password-spray pattern detected: 55 failed logins across multiple accounts including jdoe55 from 185.7.169.181.
+ALT-1085,2026-04-25T11:47:00Z,High,EDR-Endpoint01,jdoe27,WKS-7449,DLP flagged 35 files matching sensitive-data patterns uploaded to cloud-backup-744.net by jdoe48.
+ALT-1086,2026-04-18T08:15:00Z,Low,O365 Email Gateway,jdoe11,WKS-6862,"Network sensor flagged 89 DNS requests to a newly-registered domain account-verify-448.net from WKS-9333, matching a known DGA pattern."
+ALT-1087,2026-02-18T13:48:00Z,High,Firewall-Perimeter,jdoe44,WKS-3536,"CDN reported 13x normal request volume against ERP-App, sourced from 5947 IPs across multiple ASNs."
+ALT-1088,2026-01-01T14:48:00Z,Medium,SIEM Correlation Rule,jdoe6,WKS-6434,jdoe8's account signed in from Auckland while an active session from Chennai was still open.
+ALT-1089,2026-03-04T23:53:00Z,Critical,AD Domain Controller,jdoe48,WKS-6352,"Repeated low-and-slow outbound connections from WKS-1136 to 185.165.74.161 on a non-standard port, beacon-interval jitter under 5%."
+ALT-1090,2026-03-05T14:40:00Z,High,DLP Gateway,jdoe6,WKS-1654,DLP flagged 16 files matching sensitive-data patterns uploaded to cloud-backup-957.net by jdoe24.
+ALT-1091,2026-02-18T10:33:00Z,Low,SIEM Correlation Rule,jdoe28,WKS-9760,jdoe1's account was granted elevated CRM-DB permissions with no corresponding access request on file.
+ALT-1092,2026-07-12T16:15:00Z,Medium,Network IDS,jdoe29,WKS-7493,Repeated 87 XSS probe requests detected against partner-api login page from 185.166.36.77.
+ALT-1093,2026-08-05T16:35:00Z,High,IdP / SSO Provider,jdoe46,WKS-2877,"jdoe48 accessed Finance-Share records far outside their normal job function, then exported 15GB, and was followed by an unusually large outbound transfer to external cloud storage."
+ALT-1094,2026-04-19T03:58:00Z,Medium,Cloud WAF,jdoe11,WKS-7012,"WAF blocked a SQL injection attempt against support-ticketing from IP 185.15.104.61, payload matched OWASP CRS rule 942144."
+ALT-1095,2026-08-04T00:31:00Z,Medium,EDR-Endpoint01,jdoe5,WKS-5233,"Repeated low-and-slow outbound connections from WKS-9011 to 185.91.26.92 on a non-standard port, beacon-interval jitter under 5%."
+ALT-1096,2026-08-13T07:55:00Z,Critical,Network IDS,jdoe34,WKS-2243,AD lockout triggered for jdoe43 after 6 rapid failed authentication attempts from 185.88.255.39.
+ALT-1097,2026-03-09T12:17:00Z,Low,EDR-Endpoint01,jdoe33,WKS-5293,"CDN reported 19x normal request volume against ERP-App, sourced from 318 IPs across multiple ASNs."
+ALT-1098,2026-06-22T10:56:00Z,Low,SIEM Correlation Rule,jdoe33,WKS-7017,ERP-App response times degraded under a sudden 28x traffic increase from 4318 distinct sources.
+ALT-1099,2026-08-12T22:27:00Z,High,EDR-Endpoint01,jdoe54,WKS-8938,"Scanner flagged CVE-2026-6054 (CVSS 6.6) unpatched on WKS-5954, internet-facing."
+ALT-1100,2026-06-24T04:00:00Z,Low,VPN Gateway,jdoe18,WKS-9797,Traffic spike of 17x baseline detected on FileShare-Prod from 2130 distinct source IPs.
+ALT-1101,2026-06-02T13:39:00Z,Critical,Cloud WAF,jdoe11,WKS-2531,"WAF blocked a SQL injection attempt against customer-portal.rockwell.com from IP 185.222.107.204, payload matched OWASP CRS rule 942113."
+ALT-1102,2026-05-21T17:45:00Z,Low,SIEM Correlation Rule,jdoe36,WKS-5559,"User jdoe50 reported a suspicious email impersonating IT support, requesting credentials via cloud-backup-933.net."
+ALT-1103,2026-03-28T23:54:00Z,Low,Firewall-Perimeter,jdoe34,WKS-1475,Finance-Share response times degraded under a sudden 18x traffic increase from 4698 distinct sources.
+ALT-1104,2026-05-23T13:15:00Z,Low,VPN Gateway,jdoe23,WKS-4329,FileShare-Prod response times degraded under a sudden 19x traffic increase from 4771 distinct sources.
+ALT-1105,2026-08-06T13:55:00Z,Medium,Firewall-Perimeter,jdoe60,WKS-5875,"CDN reported 43x normal request volume against Finance-Share, sourced from 3861 IPs across multiple ASNs."
+ALT-1106,2026-04-19T13:44:00Z,Low,EDR-Endpoint01,jdoe47,WKS-1326,"WAF blocked a SQL injection attempt against customer-portal.rockwell.com from IP 185.102.24.107, payload matched OWASP CRS rule 942119."
+ALT-1107,2026-05-09T02:02:00Z,Low,VPN Gateway,jdoe33,WKS-1784,O365 flagged an inbound message to jdoe32 with a spoofed sender header and a lookalike domain account-verify-102.net.
+ALT-1108,2026-05-23T19:46:00Z,Medium,DLP Gateway,jdoe16,WKS-4250,Anomalous outbound traffic from WKS-7723 to unregistered external IP 185.109.82.139 totaling 10GB over 3h.
+ALT-1109,2026-07-12T22:04:00Z,High,DLP Gateway,jdoe34,WKS-5364,"WAF blocked a SQL injection attempt against partner-api from IP 185.81.117.249, payload matched OWASP CRS rule 942422."
+ALT-1110,2026-01-11T12:23:00Z,Medium,DLP Gateway,jdoe8,WKS-7717,"Login for jdoe17 succeeded from Lagos at one timestamp, then from Manila 11h later - physically implausible travel time, and the data was also copied to removable media outside business hours."
+ALT-1111,2026-06-17T10:51:00Z,Medium,DLP Gateway,jdoe17,WKS-1291,VPN gateway logged 60 failed connection attempts for jdoe23 from a single external IP 185.178.29.116.
+ALT-1112,2026-07-12T01:45:00Z,Critical,AD Domain Controller,jdoe27,WKS-8060,"EDR flagged mshta.exe rapidly modifying files across FileShare-Prod shares, consistent with ransomware behavior."
+ALT-1113,2026-07-14T15:11:00Z,Medium,EDR-Endpoint01,jdoe29,WKS-7514,Anomalous request pattern consistent with directory traversal detected on support-ticketing from 185.221.19.21.
+ALT-1114,2026-07-27T18:08:00Z,Critical,DLP Gateway,jdoe53,WKS-1820,"User jdoe26 added to Domain Admins group by admin1, outside standard change-management process, and preceded by a burst of failed login attempts from the same external IP."
+ALT-1115,2026-01-07T17:41:00Z,Low,Cloud WAF,jdoe60,WKS-8605,"Anomalous request pattern consistent with directory traversal detected on internal-crm-app from 185.170.220.77, and the affected host was already flagged unpatched for a known CVE."
+ALT-1116,2026-08-07T06:03:00Z,Critical,Firewall-Perimeter,jdoe28,WKS-3039,Automated scanner fingerprinted support-ticketing then attempted 55 injection payloads from 185.244.145.211 within 15 minutes.
+ALT-1117,2026-01-14T07:42:00Z,High,AD Domain Controller,jdoe46,WKS-8248,"User jdoe32 reported a suspicious email impersonating IT support, requesting credentials via secure-login-838.net."
+ALT-1118,2026-05-08T20:34:00Z,Low,EDR-Endpoint01,jdoe13,WKS-8609,Automated scanner fingerprinted internal-crm-app then attempted 74 injection payloads from 185.185.40.80 within 27 minutes.
+ALT-1119,2026-05-25T07:37:00Z,Low,AD Domain Controller,jdoe3,WKS-2649,AD lockout triggered for jdoe26 after 70 rapid failed authentication attempts from 185.19.75.126.
+ALT-1120,2026-01-02T01:32:00Z,Medium,Network IDS,jdoe7,WKS-7766,O365 flagged an inbound message to jdoe20 with a spoofed sender header and a lookalike domain file-share-441.net.
+ALT-1121,2026-03-19T17:02:00Z,Medium,IdP / SSO Provider,jdoe17,WKS-7011,Repeated 85 XSS probe requests detected against customer-portal.rockwell.com login page from 185.224.215.123.
+ALT-1122,2026-02-03T21:37:00Z,High,VPN Gateway,jdoe15,WKS-4990,"Asset inventory shows WKS-1879 still running a version affected by CVE-2026-4756 (CVSS 5.9), 90+ days overdue for patching."
+ALT-1123,2026-03-07T06:59:00Z,High,VPN Gateway,jdoe44,WKS-6424,"Login for jdoe22 succeeded from Lagos at one timestamp, then from Singapore 2h later - physically implausible travel time."
+ALT-1124,2026-07-13T20:50:00Z,High,IdP / SSO Provider,jdoe20,WKS-9710,"WKS-4261 observed making periodic outbound connections to secure-login-869.net every 5 minutes, consistent with a C2 beacon pattern, and EDR also detected a known malware signature executing shortly after."
+ALT-1125,2026-06-22T19:57:00Z,Medium,DLP Gateway,jdoe51,WKS-5993,"WAF blocked a SQL injection attempt against customer-portal.rockwell.com from IP 185.233.239.176, payload matched OWASP CRS rule 942216."
+ALT-1126,2026-07-22T17:51:00Z,High,VPN Gateway,jdoe8,WKS-4544,O365 flagged an inbound message to jdoe8 with a spoofed sender header and a lookalike domain account-verify-520.net.
+ALT-1127,2026-02-08T14:36:00Z,High,AD Domain Controller,jdoe48,WKS-6772,"WAF blocked a SQL injection attempt against customer-portal.rockwell.com from IP 185.226.229.246, payload matched OWASP CRS rule 942100."
+ALT-1128,2026-05-25T16:57:00Z,Medium,Firewall-Perimeter,jdoe47,WKS-8518,"WAF blocked a SQL injection attempt against customer-portal.rockwell.com from IP 185.93.79.170, payload matched OWASP CRS rule 942385."
+ALT-1129,2026-06-23T08:20:00Z,Critical,Firewall-Perimeter,jdoe54,WKS-9122,O365 flagged an inbound message to jdoe60 with a spoofed sender header and a lookalike domain file-share-292.net.
+ALT-1130,2026-05-12T12:20:00Z,Low,DLP Gateway,jdoe51,WKS-8742,O365 flagged an inbound message to jdoe52 with a spoofed sender header and a lookalike domain file-share-415.net.
+ALT-1131,2026-01-18T22:36:00Z,High,AD Domain Controller,jdoe23,WKS-6895,User jdoe33 downloaded 18GB from HR-Portal to removable media outside business hours.
+ALT-1132,2026-05-05T06:21:00Z,Critical,EDR-Endpoint01,jdoe60,WKS-7769,"jdoe49 accessed ERP-App records far outside their normal job function, then exported 32GB."
+ALT-1133,2026-05-20T06:57:00Z,Low,VPN Gateway,jdoe20,WKS-2537,"EDR detected svch0st.exe executing from C:\Windows\Temp on WKS-4640, matches known malware signature Trojan.Gen.4."
+ALT-1134,2026-05-21T10:21:00Z,Medium,IdP / SSO Provider,jdoe37,WKS-4773,Finance-Share response times degraded under a sudden 40x traffic increase from 5029 distinct sources.
+ALT-1135,2026-01-26T11:34:00Z,Critical,Cloud WAF,jdoe43,WKS-5124,External attack-surface scan found WKS-9268 exposing a service vulnerable to CVE-2026-5484 (CVSS 8.6).
+ALT-1136,2026-05-24T00:58:00Z,High,Network IDS,jdoe47,WKS-1258,"EDR flagged process injection into mshta.exe on WKS-2833, hash matches threat-intel signature Trojan.Gen.7."
+ALT-1137,2026-06-26T10:30:00Z,Critical,Firewall-Perimeter,jdoe55,WKS-2783,WKS-6809 began spawning child processes from svch0st.exe consistent with a known malware family Trojan.Gen.5.
+ALT-1138,2026-02-28T10:21:00Z,Critical,Network IDS,jdoe36,WKS-8565,Shadow copy deletion command executed on WKS-7293 immediately before mass file changes began.
+ALT-1139,2026-03-04T15:38:00Z,Critical,DLP Gateway,jdoe5,WKS-4909,Process powershell.exe on WKS-4275 exploited a local privilege escalation vulnerability to obtain SYSTEM access.
+ALT-1140,2026-02-25T22:06:00Z,Low,Firewall-Perimeter,jdoe10,WKS-9668,"Scanner flagged CVE-2026-4597 (CVSS 8.8) unpatched on WKS-1623, internet-facing."
+ALT-1141,2026-08-07T03:45:00Z,Low,VPN Gateway,jdoe43,WKS-8029,VPN gateway logged 82 failed connection attempts for jdoe59 from a single external IP 185.157.153.203.
+ALT-1142,2026-07-20T18:41:00Z,Medium,VPN Gateway,jdoe59,WKS-2307,"EDR detected regsvr32.exe executing from /tmp on WKS-5959, matches known malware signature Trojan.Gen.5."
+ALT-1143,2026-01-14T17:01:00Z,High,Cloud WAF,jdoe15,WKS-9912,"Email from user88@partner-co.com to jdoe9 contains a link to secure-login-284.net, flagged by URL reputation engine."
+ALT-1144,2026-02-21T06:13:00Z,Critical,AD Domain Controller,jdoe49,WKS-1223,"CDN reported 18x normal request volume against CRM-DB, sourced from 4499 IPs across multiple ASNs."
+ALT-1145,2026-02-18T00:04:00Z,Low,Cloud WAF,jdoe5,WKS-3330,"Repeated low-and-slow outbound connections from WKS-5071 to 185.246.8.24 on a non-standard port, beacon-interval jitter under 5%."
+ALT-1146,2026-04-26T11:42:00Z,Low,Cloud WAF,jdoe18,WKS-1160,Mass file rename/encryption activity detected on WKS-5967: 55 files renamed with a new extension within 15 minutes.
+ALT-1147,2026-03-05T11:50:00Z,Medium,AD Domain Controller,jdoe24,WKS-7000,"Scanner flagged CVE-2026-2457 (CVSS 7.9) unpatched on WKS-8887, internet-facing."
+ALT-1148,2026-02-15T17:45:00Z,Medium,SIEM Correlation Rule,jdoe6,WKS-7630,33 failed login attempts for account jdoe19 from external IP 185.165.229.121 within 5 minutes.
+ALT-1149,2026-04-17T05:32:00Z,Medium,Cloud WAF,jdoe14,WKS-2662,"EDR flagged process injection into powershell.exe on WKS-6916, hash matches threat-intel signature Trojan.Gen.8, and shadow copy deletion commands were also observed on the same host."
+ALT-1150,2026-01-18T20:14:00Z,Medium,SIEM Correlation Rule,jdoe43,WKS-3282,"EDR flagged process injection into rundll32.exe on WKS-2604, hash matches threat-intel signature Trojan.Gen.4."
+ALT-1151,2026-01-12T15:14:00Z,Medium,EDR-Endpoint01,jdoe31,WKS-7122,Anomalous request pattern consistent with directory traversal detected on support-ticketing from 185.116.56.218.
+ALT-1152,2026-07-05T08:15:00Z,Medium,IdP / SSO Provider,jdoe8,WKS-5487,7 endpoints on the same subnet as WKS-4707 began exhibiting identical file-encryption patterns within 2 minutes.
+ALT-1153,2026-02-01T09:04:00Z,Critical,AD Domain Controller,jdoe49,WKS-3870,DLP flagged 77 files matching sensitive-data patterns uploaded to secure-login-271.net by jdoe38.
+ALT-1154,2026-05-22T02:44:00Z,Critical,O365 Email Gateway,jdoe40,WKS-8728,Password-spray pattern detected: 69 failed logins across multiple accounts including jdoe55 from 185.247.143.50.
+ALT-1155,2026-04-21T06:56:00Z,Medium,AD Domain Controller,jdoe8,WKS-1584,External attack-surface scan found WKS-6312 exposing a service vulnerable to CVE-2026-4393 (CVSS 7.8).
+ALT-1156,2026-04-12T09:41:00Z,Medium,AD Domain Controller,jdoe11,WKS-2060,"EDR flagged rundll32.exe rapidly modifying files across FileShare-Prod shares, consistent with ransomware behavior."
+ALT-1157,2026-02-17T11:20:00Z,Medium,AD Domain Controller,jdoe27,WKS-8845,jdoe39's account signed in from Sao Paulo while an active session from Singapore was still open.
+ALT-1158,2026-02-26T15:06:00Z,Medium,EDR-Endpoint01,jdoe38,WKS-3494,"User jdoe17 downloaded 36GB from FileShare-Prod to removable media outside business hours, and the session also originated from a location never seen for this account."
+ALT-1159,2026-04-24T00:14:00Z,Low,IdP / SSO Provider,jdoe19,WKS-4464,External attack-surface scan found WKS-3264 exposing a service vulnerable to CVE-2026-2767 (CVSS 9.1).
+ALT-1160,2026-03-06T20:56:00Z,Medium,VPN Gateway,jdoe30,WKS-1495,Automated scanner fingerprinted customer-portal.rockwell.com then attempted 90 injection payloads from 185.246.180.204 within 7 minutes.
+ALT-1161,2026-06-20T01:06:00Z,Medium,SIEM Correlation Rule,jdoe6,WKS-5564,"Asset inventory shows WKS-2740 still running a version affected by CVE-2026-2092 (CVSS 6.6), 90+ days overdue for patching."
+ALT-1162,2026-03-27T17:38:00Z,Low,DLP Gateway,jdoe11,WKS-4926,13 failed login attempts for account jdoe44 from external IP 185.38.101.179 within 5 minutes.
+ALT-1163,2026-06-26T07:01:00Z,High,AD Domain Controller,jdoe33,WKS-8687,Password-spray pattern detected: 52 failed logins across multiple accounts including jdoe24 from 185.122.58.245.
+ALT-1164,2026-07-13T09:07:00Z,High,VPN Gateway,jdoe1,WKS-7726,"Network sensor flagged 76 DNS requests to a newly-registered domain file-share-775.net from WKS-1001, matching a known DGA pattern."
+ALT-1165,2026-06-16T14:50:00Z,Critical,VPN Gateway,jdoe47,WKS-6577,Repeated 42 XSS probe requests detected against customer-portal.rockwell.com login page from 185.35.62.139.
+ALT-1166,2026-05-24T11:36:00Z,High,EDR-Endpoint01,jdoe39,WKS-9495,"Traffic spike of 24x baseline detected on HR-Portal from 5381 distinct source IPs, and the same source IP also triggered a WAF injection-payload block."
+ALT-1167,2026-01-08T11:56:00Z,High,DLP Gateway,jdoe11,WKS-7235,"EDR flagged process injection into regsvr32.exe on WKS-3045, hash matches threat-intel signature Trojan.Gen.1."
+ALT-1168,2026-04-17T14:59:00Z,Low,Firewall-Perimeter,jdoe36,WKS-4496,"WAF blocked a SQL injection attempt against partner-api from IP 185.231.204.43, payload matched OWASP CRS rule 942358."
+ALT-1169,2026-04-19T23:46:00Z,Medium,EDR-Endpoint01,jdoe48,WKS-8575,AD lockout triggered for jdoe28 after 68 rapid failed authentication attempts from 185.161.120.14.
+ALT-1170,2026-06-20T13:19:00Z,Critical,AD Domain Controller,jdoe11,WKS-4580,"Network sensor flagged 89 DNS requests to a newly-registered domain account-verify-101.net from WKS-2140, matching a known DGA pattern."
+ALT-1171,2026-02-13T03:22:00Z,Medium,DLP Gateway,jdoe22,WKS-6767,"User jdoe21 added to Domain Admins group by admin2, outside standard change-management process."
+ALT-1172,2026-07-21T05:18:00Z,High,EDR-Endpoint01,jdoe9,WKS-1438,WKS-9337 resolved secure-login-969.net moments before establishing a long-lived outbound connection to 185.159.77.41.
+ALT-1173,2026-08-06T22:24:00Z,Low,O365 Email Gateway,jdoe5,WKS-4164,Successive logins for jdoe18 from IP addresses geolocated to Auckland and Lagos within 36 minutes.
+ALT-1174,2026-03-20T04:19:00Z,High,O365 Email Gateway,jdoe6,WKS-1916,"Scanner flagged CVE-2026-2467 (CVSS 8.8) unpatched on WKS-2754, internet-facing."
+ALT-1175,2026-03-06T05:57:00Z,Critical,Firewall-Perimeter,jdoe51,WKS-6751,80 failed login attempts for account jdoe46 from external IP 185.92.173.241 within 5 minutes.
+ALT-1176,2026-01-17T22:32:00Z,Medium,O365 Email Gateway,jdoe55,WKS-6930,"WAF blocked a SQL injection attempt against support-ticketing from IP 185.154.163.87, payload matched OWASP CRS rule 942180."
+ALT-1177,2026-08-09T02:31:00Z,Medium,O365 Email Gateway,jdoe10,WKS-8013,DLP flagged 27 files matching sensitive-data patterns uploaded to account-verify-693.net by jdoe27.
+ALT-1178,2026-05-07T02:41:00Z,High,AD Domain Controller,jdoe18,WKS-7070,"EDR flagged process injection into svch0st.exe on WKS-7167, hash matches threat-intel signature Trojan.Gen.5."
+ALT-1179,2026-08-01T02:05:00Z,Low,O365 Email Gateway,jdoe14,WKS-8611,External attack-surface scan found WKS-8745 exposing a service vulnerable to CVE-2026-5836 (CVSS 5.7).
+ALT-1180,2026-07-18T19:54:00Z,Low,SIEM Correlation Rule,jdoe14,WKS-2611,jdoe22's account signed in from Chennai while an active session from Frankfurt was still open.
+ALT-1181,2026-06-06T10:56:00Z,High,EDR-Endpoint01,jdoe24,WKS-7221,jdoe48 exported 26GB from CRM-DB to a personal email account shortly after a support ticket about data access.
+ALT-1182,2026-05-10T22:15:00Z,High,Network IDS,jdoe5,WKS-7889,Antivirus quarantined a file matching Trojan.Gen.8 on WKS-4351 after a user opened an email attachment.
+ALT-1183,2026-03-01T18:12:00Z,High,Firewall-Perimeter,jdoe58,WKS-4672,"User jdoe33 reported a suspicious email impersonating IT support, requesting credentials via file-share-785.net."
+ALT-1184,2026-03-12T11:16:00Z,High,IdP / SSO Provider,jdoe10,WKS-3663,Antivirus quarantined a file matching Trojan.Gen.2 on WKS-7954 after a user opened an email attachment.
+ALT-1185,2026-06-16T01:14:00Z,Medium,O365 Email Gateway,jdoe29,WKS-9242,AD lockout triggered for jdoe51 after 62 rapid failed authentication attempts from 185.140.193.4.
+ALT-1186,2026-08-04T23:41:00Z,High,Firewall-Perimeter,jdoe53,WKS-1956,"Scanner flagged CVE-2026-8322 (CVSS 6.6) unpatched on WKS-2291, internet-facing."
+ALT-1187,2026-05-22T21:21:00Z,Medium,VPN Gateway,jdoe3,WKS-7565,User jdoe34 downloaded 15GB from HR-Portal to removable media outside business hours.
+ALT-1188,2026-01-23T05:37:00Z,Medium,O365 Email Gateway,jdoe51,WKS-2227,"Outbound transfer of 29GB to external cloud storage cloud-backup-743.net detected from WKS-9229, unusual volume for jdoe4's role, and the email also contained a link flagged by the URL reputation engine."
+ALT-1189,2026-02-22T07:00:00Z,High,Firewall-Perimeter,jdoe3,WKS-6793,WKS-5537 began spawning child processes from regsvr32.exe consistent with a known malware family Trojan.Gen.3.
+ALT-1190,2026-05-04T20:45:00Z,Medium,SIEM Correlation Rule,jdoe50,WKS-7143,WKS-8912 began spawning child processes from mshta.exe consistent with a known malware family Trojan.Gen.6.
+ALT-1191,2026-05-21T11:44:00Z,High,O365 Email Gateway,jdoe18,WKS-9985,44 endpoints on the same subnet as WKS-5207 began exhibiting identical file-encryption patterns within 25 minutes.
+ALT-1192,2026-03-23T05:22:00Z,Low,AD Domain Controller,jdoe4,WKS-5020,O365 flagged an inbound message to jdoe28 with a spoofed sender header and a lookalike domain file-share-448.net.
+ALT-1193,2026-01-20T22:12:00Z,Low,VPN Gateway,jdoe2,WKS-4796,Traffic spike of 16x baseline detected on HR-Portal from 3257 distinct source IPs.
+ALT-1194,2026-04-11T18:15:00Z,High,DLP Gateway,jdoe41,WKS-1621,User jdoe15 downloaded 27GB from ERP-App to removable media outside business hours.
+ALT-1195,2026-02-06T11:00:00Z,Low,DLP Gateway,jdoe27,WKS-9319,Shadow copy deletion command executed on WKS-4732 immediately before mass file changes began.
+ALT-1196,2026-06-27T03:23:00Z,Low,IdP / SSO Provider,jdoe42,WKS-6366,Unexpected sudo/root access granted to jdoe46 on WKS-2867 without an approved change ticket.
+ALT-1197,2026-06-22T12:43:00Z,High,O365 Email Gateway,jdoe32,WKS-9942,VPN gateway logged 88 failed connection attempts for jdoe27 from a single external IP 185.137.115.93.
+ALT-1198,2026-04-22T14:47:00Z,Critical,Cloud WAF,jdoe37,WKS-3068,Process mshta.exe on WKS-3812 exploited a local privilege escalation vulnerability to obtain SYSTEM access.
+ALT-1199,2026-03-07T10:57:00Z,Low,Cloud WAF,jdoe39,WKS-1426,"CDN reported 6x normal request volume against FileShare-Prod, sourced from 5217 IPs across multiple ASNs."
+ALT-1200,2026-03-13T22:34:00Z,Medium,SIEM Correlation Rule,jdoe25,WKS-8470,VPN gateway logged 29 failed connection attempts for jdoe2 from a single external IP 185.254.247.113.
+ALT-1201,2026-07-06T16:48:00Z,Medium,Firewall-Perimeter,jdoe28,WKS-4023,"Scanner flagged CVE-2026-8561 (CVSS 7.7) unpatched on WKS-2556, internet-facing."
+ALT-1202,2026-05-22T03:50:00Z,High,DLP Gateway,jdoe53,WKS-8652,Process regsvr32.exe on WKS-8903 exploited a local privilege escalation vulnerability to obtain SYSTEM access.
+ALT-1203,2026-04-15T01:56:00Z,Critical,Network IDS,jdoe7,WKS-9813,"DLP flagged 15 files matching sensitive-data patterns uploaded to cloud-backup-326.net by jdoe12, and the email also contained a link flagged by the URL reputation engine."
+ALT-1204,2026-03-09T00:19:00Z,Low,SIEM Correlation Rule,jdoe15,WKS-7087,"Anomalous outbound traffic from WKS-3582 to unregistered external IP 185.65.141.208 totaling 37GB over 4h, and the data was also copied to removable media outside business hours."
+ALT-1205,2026-08-09T05:52:00Z,Medium,DLP Gateway,jdoe58,WKS-7679,External attack-surface scan found WKS-9033 exposing a service vulnerable to CVE-2026-6134 (CVSS 8.8).
+ALT-1206,2026-01-22T09:01:00Z,Medium,DLP Gateway,jdoe29,WKS-6324,External attack-surface scan found WKS-1145 exposing a service vulnerable to CVE-2026-3585 (CVSS 9.1).
+ALT-1207,2026-08-10T15:28:00Z,Low,DLP Gateway,jdoe7,WKS-8132,"EDR flagged regsvr32.exe rapidly modifying files across FileShare-Prod shares, consistent with ransomware behavior."
+ALT-1208,2026-05-27T07:07:00Z,Low,IdP / SSO Provider,jdoe2,WKS-7819,"Asset inventory shows WKS-2794 still running a version affected by CVE-2026-4326 (CVSS 6.2), 90+ days overdue for patching."
+ALT-1209,2026-02-05T09:52:00Z,Low,DLP Gateway,jdoe29,WKS-5126,"EDR detected powershell.exe executing from /var/tmp on WKS-5940, matches known malware signature Trojan.Gen.9."
+ALT-1210,2026-06-10T17:17:00Z,Medium,IdP / SSO Provider,jdoe6,WKS-2542,MFA-approved login for jdoe37 originated from a new device/location (Auckland) never seen for this account.
+ALT-1211,2026-03-12T08:44:00Z,Medium,Network IDS,jdoe60,WKS-4178,68 endpoints on the same subnet as WKS-5053 began exhibiting identical file-encryption patterns within 37 minutes.
+ALT-1212,2026-03-17T10:35:00Z,Medium,SIEM Correlation Rule,jdoe3,WKS-2336,jdoe7 exported 45GB from Finance-Share to a personal email account shortly after a support ticket about data access.
+ALT-1213,2026-02-17T04:09:00Z,Medium,IdP / SSO Provider,jdoe15,WKS-6391,External attack-surface scan found WKS-6446 exposing a service vulnerable to CVE-2026-4013 (CVSS 9.1).
+ALT-1214,2026-02-08T14:18:00Z,Medium,VPN Gateway,jdoe4,WKS-7098,DLP flagged jdoe26 copying 15GB of HR-Portal data to a personal cloud account shortly before their resignation date.
+ALT-1215,2026-06-17T03:02:00Z,Critical,Cloud WAF,jdoe17,WKS-5263,"Login for jdoe52 succeeded from Singapore at one timestamp, then from Chennai 4h later - physically implausible travel time, and preceded by a burst of failed login attempts from the same external IP."
+ALT-1216,2026-01-06T14:04:00Z,High,EDR-Endpoint01,jdoe29,WKS-1505,Anomalous request pattern consistent with directory traversal detected on customer-portal.rockwell.com from 185.64.191.176.
+ALT-1217,2026-01-01T03:53:00Z,Low,O365 Email Gateway,jdoe55,WKS-7928,Attachment in an email to jdoe27 from user12@partner-co.com triggered a phishing-macro detection rule.
+ALT-1218,2026-05-02T19:56:00Z,High,DLP Gateway,jdoe43,WKS-5531,"Unexpected sudo/root access granted to jdoe38 on WKS-2072 without an approved change ticket, and the affected host was already flagged unpatched for a known CVE."
+ALT-1219,2026-05-21T17:02:00Z,High,AD Domain Controller,jdoe43,WKS-1228,"WAF blocked a SQL injection attempt against partner-api from IP 185.61.238.212, payload matched OWASP CRS rule 942419."
+ALT-1220,2026-05-26T15:03:00Z,Low,EDR-Endpoint01,jdoe11,WKS-1015,VPN gateway logged 81 failed connection attempts for jdoe2 from a single external IP 185.151.37.245.
+ALT-1221,2026-06-27T04:58:00Z,Medium,Firewall-Perimeter,jdoe21,WKS-7432,"Outbound transfer of 10GB to external cloud storage file-share-410.net detected from WKS-2995, unusual volume for jdoe10's role."
+ALT-1222,2026-06-13T05:10:00Z,Low,VPN Gateway,jdoe5,WKS-1109,Repeated 89 XSS probe requests detected against partner-api login page from 185.224.32.52.
+ALT-1223,2026-05-24T03:13:00Z,Medium,DLP Gateway,jdoe21,WKS-8280,"EDR detected rundll32.exe executing from C:\Users\Public on WKS-1509, matches known malware signature Trojan.Gen.7, and shadow copy deletion commands were also observed on the same host."
+ALT-1224,2026-02-18T20:46:00Z,Medium,EDR-Endpoint01,jdoe60,WKS-7428,"jdoe40 accessed CRM-DB records far outside their normal job function, then exported 50GB."
+ALT-1225,2026-07-24T06:44:00Z,Low,EDR-Endpoint01,jdoe6,WKS-4625,Repeated 25 XSS probe requests detected against support-ticketing login page from 185.236.66.164.
+ALT-1226,2026-07-11T08:24:00Z,Medium,Cloud WAF,jdoe32,WKS-8311,jdoe37 printed an unusually large volume of records from HR-Portal after hours.
+ALT-1227,2026-05-12T02:09:00Z,Critical,IdP / SSO Provider,jdoe21,WKS-8012,Attachment in an email to jdoe53 from user7@partner-co.com triggered a phishing-macro detection rule.
+ALT-1228,2026-06-22T08:34:00Z,Medium,VPN Gateway,jdoe41,WKS-2641,"Scanner flagged CVE-2026-3610 (CVSS 9.0) unpatched on WKS-8302, internet-facing."
+ALT-1229,2026-01-19T17:44:00Z,High,DLP Gateway,jdoe41,WKS-6161,Shadow copy deletion command executed on WKS-7091 immediately before mass file changes began.
+ALT-1230,2026-05-13T10:01:00Z,Critical,EDR-Endpoint01,jdoe19,WKS-6709,Process rundll32.exe on WKS-6344 exploited a local privilege escalation vulnerability to obtain SYSTEM access.
+ALT-1231,2026-04-26T13:16:00Z,Low,Cloud WAF,jdoe2,WKS-6061,"Network sensor flagged 35 DNS requests to a newly-registered domain secure-login-482.net from WKS-2579, matching a known DGA pattern."
+ALT-1232,2026-03-08T08:38:00Z,Medium,EDR-Endpoint01,jdoe16,WKS-5058,User jdoe24 downloaded 34GB from Finance-Share to removable media outside business hours.
+ALT-1233,2026-03-26T20:06:00Z,Low,IdP / SSO Provider,jdoe40,WKS-3434,"Scanner flagged CVE-2026-9481 (CVSS 9.7) unpatched on WKS-1947, internet-facing."
+ALT-1234,2026-02-07T17:46:00Z,Critical,Cloud WAF,jdoe24,WKS-2280,DLP flagged 47 files matching sensitive-data patterns uploaded to account-verify-180.net by jdoe49.
+ALT-1235,2026-08-15T19:42:00Z,Low,AD Domain Controller,jdoe18,WKS-1478,"Outbound transfer of 44GB to external cloud storage account-verify-376.net detected from WKS-9931, unusual volume for jdoe25's role."
+ALT-1236,2026-08-06T04:49:00Z,Low,IdP / SSO Provider,jdoe26,WKS-3153,Anomalous outbound traffic from WKS-5417 to unregistered external IP 185.106.93.243 totaling 45GB over 8h.
+ALT-1237,2026-08-16T21:44:00Z,Low,VPN Gateway,jdoe49,WKS-7684,68 endpoints on the same subnet as WKS-9379 began exhibiting identical file-encryption patterns within 9 minutes.
+ALT-1238,2026-01-16T18:48:00Z,Low,DLP Gateway,jdoe37,WKS-1878,"jdoe39 accessed ERP-App records far outside their normal job function, then exported 48GB."
+ALT-1239,2026-02-12T01:15:00Z,Low,Network IDS,jdoe1,WKS-3479,VPN gateway logged 21 failed connection attempts for jdoe5 from a single external IP 185.110.67.96.
+ALT-1240,2026-02-24T14:42:00Z,Medium,Network IDS,jdoe31,WKS-3135,O365 flagged an inbound message to jdoe59 with a spoofed sender header and a lookalike domain file-share-956.net.
+ALT-1241,2026-03-21T16:21:00Z,Critical,O365 Email Gateway,jdoe29,WKS-3035,"EDR detected regsvr32.exe executing from C:\Windows\Temp on WKS-6320, matches known malware signature Trojan.Gen.2."
+ALT-1242,2026-05-13T15:25:00Z,High,Firewall-Perimeter,jdoe50,WKS-6981,Finance-Share response times degraded under a sudden 17x traffic increase from 3787 distinct sources.
+ALT-1243,2026-02-27T09:35:00Z,Low,SIEM Correlation Rule,jdoe21,WKS-5072,Attachment in an email to jdoe22 from user68@partner-co.com triggered a phishing-macro detection rule.
+ALT-1244,2026-06-26T17:19:00Z,High,EDR-Endpoint01,jdoe48,WKS-4258,DLP flagged jdoe51 copying 32GB of Finance-Share data to a personal cloud account shortly before their resignation date.
+ALT-1245,2026-02-18T05:01:00Z,High,VPN Gateway,jdoe24,WKS-9418,Successive logins for jdoe40 from IP addresses geolocated to Bucharest and Sao Paulo within 34 minutes.
+ALT-1246,2026-08-06T14:25:00Z,Low,Firewall-Perimeter,jdoe9,WKS-5964,21 endpoints on the same subnet as WKS-1302 began exhibiting identical file-encryption patterns within 28 minutes.
+ALT-1247,2026-07-26T08:20:00Z,Low,O365 Email Gateway,jdoe10,WKS-5480,DLP flagged 73 files matching sensitive-data patterns uploaded to secure-login-641.net by jdoe26.
+ALT-1248,2026-02-26T09:40:00Z,Medium,EDR-Endpoint01,jdoe45,WKS-4196,"WKS-5982 observed making periodic outbound connections to account-verify-571.net every 60 minutes, consistent with a C2 beacon pattern."
+ALT-1249,2026-03-06T16:54:00Z,Medium,Network IDS,jdoe26,WKS-8846,Automated scanner fingerprinted partner-api then attempted 16 injection payloads from 185.175.36.245 within 2 minutes.
+ALT-1250,2026-07-12T18:01:00Z,High,SIEM Correlation Rule,jdoe3,WKS-3017,User jdoe20 downloaded 42GB from FileShare-Prod to removable media outside business hours.
+ALT-1251,2026-03-18T13:58:00Z,Medium,VPN Gateway,jdoe16,WKS-4631,"User jdoe21 added to Domain Admins group by admin4, outside standard change-management process."
+ALT-1252,2026-01-28T23:52:00Z,High,SIEM Correlation Rule,jdoe56,WKS-3879,"Scanner flagged CVE-2026-3783 (CVSS 7.5) unpatched on WKS-5924, internet-facing."
+ALT-1253,2026-06-08T16:06:00Z,Medium,O365 Email Gateway,jdoe24,WKS-4533,"Asset inventory shows WKS-6722 still running a version affected by CVE-2026-6538 (CVSS 6.9), 90+ days overdue for patching."
+ALT-1254,2026-08-04T19:58:00Z,High,Cloud WAF,jdoe5,WKS-9722,Anomalous outbound traffic from WKS-2194 to unregistered external IP 185.225.148.66 totaling 2GB over 6h.
+ALT-1255,2026-01-05T14:21:00Z,Medium,Firewall-Perimeter,jdoe27,WKS-7743,"Repeated low-and-slow outbound connections from WKS-9724 to 185.88.252.210 on a non-standard port, beacon-interval jitter under 5%."
+ALT-1256,2026-04-04T07:14:00Z,Medium,EDR-Endpoint01,jdoe29,WKS-2852,Successive logins for jdoe44 from IP addresses geolocated to Chennai and Frankfurt within 8 minutes.
+ALT-1257,2026-07-16T15:24:00Z,High,Firewall-Perimeter,jdoe40,WKS-7935,"CDN reported 11x normal request volume against HR-Portal, sourced from 750 IPs across multiple ASNs."
+ALT-1258,2026-03-24T14:40:00Z,Low,SIEM Correlation Rule,jdoe1,WKS-7605,Process svch0st.exe on WKS-5059 exploited a local privilege escalation vulnerability to obtain SYSTEM access.
+ALT-1259,2026-02-01T12:33:00Z,Medium,DLP Gateway,jdoe48,WKS-8182,"EDR detected regsvr32.exe executing from /var/tmp on WKS-6330, matches known malware signature Trojan.Gen.4."
+ALT-1260,2026-02-09T00:24:00Z,High,EDR-Endpoint01,jdoe57,WKS-9705,"FileShare-Prod response times degraded under a sudden 33x traffic increase from 184 distinct sources, and the same source IP also triggered a WAF injection-payload block."
+ALT-1261,2026-03-17T15:12:00Z,Medium,AD Domain Controller,jdoe34,WKS-1116,Repeated 84 XSS probe requests detected against customer-portal.rockwell.com login page from 185.238.163.247.
+ALT-1262,2026-03-27T19:33:00Z,Low,VPN Gateway,jdoe40,WKS-7894,"Asset inventory shows WKS-4762 still running a version affected by CVE-2026-2590 (CVSS 6.0), 90+ days overdue for patching."
+ALT-1263,2026-03-03T03:14:00Z,Critical,Firewall-Perimeter,jdoe55,WKS-1327,DLP flagged 10 files matching sensitive-data patterns uploaded to account-verify-276.net by jdoe42.
+ALT-1264,2026-04-03T15:29:00Z,Low,VPN Gateway,jdoe54,WKS-8932,Password-spray pattern detected: 90 failed logins across multiple accounts including jdoe17 from 185.63.220.84.
+ALT-1265,2026-05-13T18:07:00Z,Critical,DLP Gateway,jdoe15,WKS-5146,11 failed login attempts for account jdoe1 from external IP 185.169.5.51 within 5 minutes.
+ALT-1266,2026-01-01T21:06:00Z,Low,Network IDS,jdoe37,WKS-2316,jdoe12 exported 12GB from CRM-DB to a personal email account shortly after a support ticket about data access.
+ALT-1267,2026-04-24T22:04:00Z,High,SIEM Correlation Rule,jdoe51,WKS-7994,WKS-9851 began spawning child processes from rundll32.exe consistent with a known malware family Trojan.Gen.3.
+ALT-1268,2026-06-13T19:08:00Z,Medium,SIEM Correlation Rule,jdoe2,WKS-2409,Anomalous outbound traffic from WKS-9200 to unregistered external IP 185.121.42.137 totaling 32GB over 3h.
+ALT-1269,2026-03-18T18:36:00Z,High,EDR-Endpoint01,jdoe58,WKS-6051,"CDN reported 42x normal request volume against HR-Portal, sourced from 4865 IPs across multiple ASNs."
+ALT-1270,2026-06-16T07:30:00Z,Critical,EDR-Endpoint01,jdoe58,WKS-8830,"CDN reported 9x normal request volume against HR-Portal, sourced from 3544 IPs across multiple ASNs."
+ALT-1271,2026-03-08T20:08:00Z,Critical,Network IDS,jdoe33,WKS-8540,"CDN reported 37x normal request volume against CRM-DB, sourced from 5142 IPs across multiple ASNs."
+ALT-1272,2026-06-17T12:50:00Z,Low,Firewall-Perimeter,jdoe12,WKS-3510,Password-spray pattern detected: 32 failed logins across multiple accounts including jdoe46 from 185.100.66.116.
+ALT-1273,2026-08-19T23:28:00Z,Medium,Cloud WAF,jdoe6,WKS-6367,jdoe31 printed an unusually large volume of records from HR-Portal after hours.
+ALT-1274,2026-01-01T02:11:00Z,Low,AD Domain Controller,jdoe37,WKS-5328,"WKS-6448 observed making periodic outbound connections to file-share-369.net every 10 minutes, consistent with a C2 beacon pattern."
+ALT-1275,2026-01-19T07:04:00Z,Medium,Network IDS,jdoe29,WKS-1947,"Scanner flagged CVE-2026-3923 (CVSS 8.3) unpatched on WKS-9307, internet-facing, and the same source IP also triggered a WAF injection-payload block."
+ALT-1276,2026-04-13T15:15:00Z,Medium,Cloud WAF,jdoe22,WKS-5155,HR-Portal response times degraded under a sudden 34x traffic increase from 5308 distinct sources.
+ALT-1277,2026-08-16T17:44:00Z,Low,DLP Gateway,jdoe31,WKS-1291,"VPN gateway logged 90 failed connection attempts for jdoe38 from a single external IP 185.77.42.97, and the account was also granted elevated access with no change ticket on file."
+ALT-1278,2026-01-02T12:28:00Z,High,IdP / SSO Provider,jdoe54,WKS-1294,Shadow copy deletion command executed on WKS-4240 immediately before mass file changes began.
+ALT-1279,2026-03-15T22:02:00Z,High,VPN Gateway,jdoe58,WKS-3333,MFA-approved login for jdoe44 originated from a new device/location (Lagos) never seen for this account.
+ALT-1280,2026-07-03T08:30:00Z,Medium,O365 Email Gateway,jdoe18,WKS-6007,"EDR detected mshta.exe executing from C:\Windows\Temp on WKS-9070, matches known malware signature Trojan.Gen.9."
